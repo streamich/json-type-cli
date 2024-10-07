@@ -42,6 +42,7 @@
   ],
   "license": "Apache-2.0",
   "scripts": {
+    "start": "npx ts-node src/__demos__/cli.ts",
     "format": "biome format ./src",
     "format:fix": "biome format --write ./src",
     "lint": "biome lint ./src",
@@ -64,6 +65,7 @@
     "@jsonjoy.com/reactive-rpc": "^2.1.0",
     "@jsonjoy.com/util": "^1.5.0",
     "json-joy": "^17.0.0",
+    "rxjs": "^7.8.1",
     "tree-dump": "^1.0.2"
   },
   "devDependencies": {

@@ -61,7 +61,9 @@
   "dependencies": {
     "@jsonjoy.com/json-pack": "^1.1.0",
     "@jsonjoy.com/json-type": "^1.0.0",
+    "@jsonjoy.com/reactive-rpc": "^2.1.0",
     "@jsonjoy.com/util": "^1.5.0",
+    "json-joy": "^17.0.0",
     "tree-dump": "^1.0.2"
   },
   "devDependencies": {

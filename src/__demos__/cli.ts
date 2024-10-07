@@ -6,7 +6,7 @@ import {defineCrdtRoutes} from './routes/crdt';
 import {definePatchRoutes} from './routes/patch';
 import {defineUtilRoutes} from './routes/util';
 
-// prettier-ignore
+// biome-ignore format: keep each route on a separate line
 const router =
   ( definePatchRoutes
   ( defineCrdtRoutes

@@ -1,6 +1,6 @@
-import {ObjectType} from '@jsonjoy.com/json-type';
-import {CliContext} from '../../types';
-import {ObjectValue} from '@jsonjoy.com/json-type/lib/value/ObjectValue';
+import type {ObjectType} from '@jsonjoy.com/json-type';
+import type {CliContext} from '../../types';
+import type {ObjectValue} from '@jsonjoy.com/json-type/lib/value/ObjectValue';
 
 export const defineUtilRoutes = <Routes extends ObjectType<any>>(r: ObjectValue<Routes>) =>
   r.extend((t, prop) => [

@@ -2,8 +2,8 @@ import {Model} from 'json-joy/lib/json-crdt';
 import {Encoder as VerboseEncoder} from 'json-joy/lib/json-crdt/codec/structural/verbose/Encoder';
 import {Encoder as CompactEncoder} from 'json-joy/lib/json-crdt/codec/structural/compact/Encoder';
 import {encode as encodePatch} from 'json-joy/lib/json-crdt-patch/codec/compact/encode';
-import {ObjectType} from '@jsonjoy.com/json-type';
-import {ObjectValue} from '@jsonjoy.com/json-type/lib/value/ObjectValue';
+import type {ObjectType} from '@jsonjoy.com/json-type';
+import type {ObjectValue} from '@jsonjoy.com/json-type/lib/value/ObjectValue';
 
 export const defineCrdtRoutes = <Routes extends ObjectType<any>>(r: ObjectValue<Routes>) =>
   r.prop(

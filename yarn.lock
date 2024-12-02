@@ -1062,11 +1062,11 @@ __metadata:
   linkType: hard
 
 "@types/node@npm:*, @types/node@npm:^22.7.4":
-  version: 22.9.3
-  resolution: "@types/node@npm:22.9.3"
+  version: 22.10.1
+  resolution: "@types/node@npm:22.10.1"
   dependencies:
-    undici-types: "npm:~6.19.8"
-  checksum: 10c0/954ec72bf29436ea62425a9563914a9c1e93f97b18194acd51d74d13998a701977547ed2985ed3a0e97211b785436d28377116e5f613bfcf3182d9bd81d784dc
+    undici-types: "npm:~6.20.0"
+  checksum: 10c0/0fbb6d29fa35d807f0223a4db709c598ac08d66820240a2cd6a8a69b8f0bc921d65b339d850a666b43b4e779f967e6ed6cf6f0fca3575e08241e6b900364c234
   languageName: node
   linkType: hard
 
@@ -1675,9 +1675,9 @@ __metadata:
   linkType: hard
 
 "electron-to-chromium@npm:^1.5.41":
-  version: 1.5.64
-  resolution: "electron-to-chromium@npm:1.5.64"
-  checksum: 10c0/331c2160cc37ef85317b44f2078af8ff16f068fc95d4af2210fe943b567f20b1445a7faa40c05d290bc229102ef1b662371464ba2725d10ff6c8543af6d40adf
+  version: 1.5.67
+  resolution: "electron-to-chromium@npm:1.5.67"
+  checksum: 10c0/bcd21c3961267fd733973586045a38d41f697e6821e7624cdd39d48fd744d9bd93ec7db59abbafeb464861218b959a920892cfaa719bff4441d1d49f8dcdff94
   languageName: node
   linkType: hard
 
@@ -2772,8 +2772,8 @@ __metadata:
   linkType: hard
 
 "json-joy@npm:^17.0.0":
-  version: 17.20.0
-  resolution: "json-joy@npm:17.20.0"
+  version: 17.22.0
+  resolution: "json-joy@npm:17.22.0"
   dependencies:
     "@jsonjoy.com/base64": "npm:^1.1.2"
     "@jsonjoy.com/json-expression": "npm:^1.0.0"
@@ -2801,7 +2801,7 @@ __metadata:
     json-pointer: bin/json-pointer.js
     json-pointer-test: bin/json-pointer-test.js
     json-unpack: bin/json-unpack.js
-  checksum: 10c0/e4ccb4ed42473308f75ac7c4172265d4dda66603529e4582c1269f6d8754827d96bb6e5fdcba22d6f56647b6d7fa81479afd8ea5592ee67c88d1441a06022ff5
+  checksum: 10c0/3177be015d041bd7412ab101dcab40694e17cc2cfec052914440dfcdc15bcc8a88a5bd8e893758820fbde4a6e14a1f65566a276d55f28f2e1833921d703059a3
   languageName: node
   linkType: hard
 
@@ -2958,14 +2958,14 @@ __metadata:
   linkType: hard
 
 "memfs@npm:^4.10.0":
-  version: 4.14.0
-  resolution: "memfs@npm:4.14.0"
+  version: 4.14.1
+  resolution: "memfs@npm:4.14.1"
   dependencies:
     "@jsonjoy.com/json-pack": "npm:^1.0.3"
     "@jsonjoy.com/util": "npm:^1.3.0"
     tree-dump: "npm:^1.0.1"
     tslib: "npm:^2.0.0"
-  checksum: 10c0/d1de2e4b3c269f5b5f27b63f60bb8ea9ae5800843776e0bed4548f2957dcd55237ac5eab3a5ffe0d561a6be53e42c055a7bc79efc1613563b14e14c287ef3b0a
+  checksum: 10c0/2cf3836aa753fd846a4f5b9d6d5e22d9f2523eb4203a12b34a2c4baa7d6d16b37e30d7bab580c52a6f94a3dfdd14309128fe3e1aa5dacb5493903ca60efc54be
   languageName: node
   linkType: hard
 
@@ -3932,10 +3932,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"undici-types@npm:~6.19.8":
-  version: 6.19.8
-  resolution: "undici-types@npm:6.19.8"
-  checksum: 10c0/078afa5990fba110f6824823ace86073b4638f1d5112ee26e790155f481f2a868cc3e0615505b6f4282bdf74a3d8caad715fd809e870c2bb0704e3ea6082f344
+"undici-types@npm:~6.20.0":
+  version: 6.20.0
+  resolution: "undici-types@npm:6.20.0"
+  checksum: 10c0/68e659a98898d6a836a9a59e6adf14a5d799707f5ea629433e025ac90d239f75e408e2e5ff086afc3cace26f8b26ee52155293564593fbb4a2f666af57fc59bf
   languageName: node
   linkType: hard
 

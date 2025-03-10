@@ -833,8 +833,8 @@ __metadata:
   linkType: hard
 
 "@jsonjoy.com/json-pack@npm:^1.0.3, @jsonjoy.com/json-pack@npm:^1.0.4, @jsonjoy.com/json-pack@npm:^1.1.0":
-  version: 1.1.1
-  resolution: "@jsonjoy.com/json-pack@npm:1.1.1"
+  version: 1.2.0
+  resolution: "@jsonjoy.com/json-pack@npm:1.2.0"
   dependencies:
     "@jsonjoy.com/base64": "npm:^1.1.1"
     "@jsonjoy.com/util": "npm:^1.1.2"
@@ -842,7 +842,7 @@ __metadata:
     thingies: "npm:^1.20.0"
   peerDependencies:
     tslib: 2
-  checksum: 10c0/fd0d8baa0c8eba536924540717901e0d7eed742576991033cceeb32dcce801ee0a4318cf6eb40b444c9e78f69ddbd4f38b9eb0041e9e54c17e7b6d1219b12e1d
+  checksum: 10c0/0744cfe2f54d896003ad240f0f069b41a152feb53b6134c5e65961126b9e5fdfc74a46f63b1dfa280e80a3d176c57e06de072bf03d749ec1982e41677a1ce5d5
   languageName: node
   linkType: hard
 
@@ -1080,11 +1080,11 @@ __metadata:
   linkType: hard
 
 "@types/node@npm:*, @types/node@npm:^22.7.4":
-  version: 22.13.8
-  resolution: "@types/node@npm:22.13.8"
+  version: 22.13.10
+  resolution: "@types/node@npm:22.13.10"
   dependencies:
     undici-types: "npm:~6.20.0"
-  checksum: 10c0/bfc92b734a9dce6ac5daee0a52feccdf5dcb3804d895e4bc5384e2f4644612b8801725cd03c8c3c0888fb5eeb16b875877ac44b77641e0196dc1a837b1c2a366
+  checksum: 10c0/a3865f9503d6f718002374f7b87efaadfae62faa499c1a33b12c527cfb9fd86f733e1a1b026b80c5a0e4a965701174bc3305595a7d36078aa1abcf09daa5dee9
   languageName: node
   linkType: hard
 
@@ -1455,9 +1455,9 @@ __metadata:
   linkType: hard
 
 "caniuse-lite@npm:^1.0.30001688":
-  version: 1.0.30001701
-  resolution: "caniuse-lite@npm:1.0.30001701"
-  checksum: 10c0/a814bd4dd8b49645ca51bc6ee42120660a36394bb54eb6084801d3f2bbb9471e5e1a9a8a25f44f83086a032d46e66b33031e2aa345f699b90a7e84a9836b819c
+  version: 1.0.30001703
+  resolution: "caniuse-lite@npm:1.0.30001703"
+  checksum: 10c0/ed88e318da28e9e59c4ac3a2e3c42859558b7b713aebf03696a1f916e4ed4b70734dda82be04635e2b62ec355b8639bbed829b7b12ff528d7f9cc31a3a5bea91
   languageName: node
   linkType: hard
 
@@ -1700,9 +1700,9 @@ __metadata:
   linkType: hard
 
 "electron-to-chromium@npm:^1.5.73":
-  version: 1.5.109
-  resolution: "electron-to-chromium@npm:1.5.109"
-  checksum: 10c0/19d86b95b1288b2e73d9d6084f64b14d4ef2c51d8551d85697ea68da690542d26e6d07878ff053f137e561e3e6c8c2b062d0353bc159930569831f7960bb6ed7
+  version: 1.5.113
+  resolution: "electron-to-chromium@npm:1.5.113"
+  checksum: 10c0/837fe2fd26adbc4f3ad8e758d14067a14f636f9c2923b5ded8adb93426bbe3fdc83b48ddf9f2cf03be31b5becb0c31144db19c823b696fd52a7bc4583f4bde00
   languageName: node
   linkType: hard
 
@@ -2806,8 +2806,8 @@ __metadata:
   linkType: hard
 
 "json-joy@npm:^17.0.0":
-  version: 17.29.1
-  resolution: "json-joy@npm:17.29.1"
+  version: 17.30.0
+  resolution: "json-joy@npm:17.30.0"
   dependencies:
     "@jsonjoy.com/base64": "npm:^1.1.2"
     "@jsonjoy.com/json-expression": "npm:^1.0.0"
@@ -2837,7 +2837,7 @@ __metadata:
     json-pointer: bin/json-pointer.js
     json-pointer-test: bin/json-pointer-test.js
     json-unpack: bin/json-unpack.js
-  checksum: 10c0/cac9803f21312fa96dc4e7cf3111e2c19649e98c4a41c6e1b37d776a04b60b32194c351b80de21290ff87f0dc2bf322e763adc611d94e04fba81097def28f76d
+  checksum: 10c0/08a5404abef4c31c94937157ed7934a168bee6278c14a2983fd9a3ec70e6e38394a11d2c0215474561d61d65eea208df3fb4c88fb830e0f3865e30694e481799
   languageName: node
   linkType: hard
 
@@ -4113,9 +4113,9 @@ __metadata:
   linkType: hard
 
 "very-small-parser@npm:^1.8.0":
-  version: 1.11.0
-  resolution: "very-small-parser@npm:1.11.0"
-  checksum: 10c0/a6efc896afc8cde57142db3a7c8fb30913ffe04baae7328f5a89d0d877e1b8a6eecab164f32d4cae18b4b5a27541a0648148c3f67a18117469cb293e772f4305
+  version: 1.12.0
+  resolution: "very-small-parser@npm:1.12.0"
+  checksum: 10c0/76859747f79052c590f4f531679fa1421f5daf2371461cfbb662a2d26f92087e7de42582802a4aea915c083a229bf6fd3a3ca41ffabac72da850b50c7884a258
   languageName: node
   linkType: hard
 

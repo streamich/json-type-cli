@@ -1,6 +1,6 @@
 {
   "name": "@jsonjoy.com/json-type-cli",
-  "packageManager": "yarn@4.7.0",
+  "packageManager": "yarn@4.8.0",
   "publishConfig": {
     "access": "public"
   },

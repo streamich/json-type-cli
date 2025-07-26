@@ -23,5 +23,19 @@ export const defineBuiltinRoutes = <Routes extends ObjectType<any>>(r: ObjectVal
         return (ctx as CliContext).cli.types.exportTypes();
       },
     ),
+
+    r(
+      '.info',
+      t.Function(t.undef, t.any).options({
+        title: 'CLI information',
+        description: 'Returns whole information about this CLI.',
+      }),
+      async (request, ctx) => {
+        return {
+          version: (ctx as CliContext).cli.options.version,
+          cmd: (ctx as CliContext).cli.options.cmd,
+        };
+      },
+    ),
   ]);
 };

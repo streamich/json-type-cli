@@ -39,8 +39,8 @@ the "--stdout" or "--out" option.
 Usage:
 
     ${cmd} <method> '<json>'
-    echo '<json>' | ${cmd} <method>
     ${cmd} <method> --<type><pointer>=<value>
+    echo '<json>' | ${cmd} <method>
 
 Examples:
 

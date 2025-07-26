@@ -60,13 +60,14 @@
     "tslib": "2"
   },
   "dependencies": {
-    "@jsonjoy.com/json-pack": "^1.1.0",
-    "@jsonjoy.com/json-type": "^1.0.0",
-    "@jsonjoy.com/reactive-rpc": "^2.1.0",
-    "@jsonjoy.com/util": "^1.5.0",
-    "json-joy": "^17.0.0",
-    "rxjs": "^7.8.1",
-    "tree-dump": "^1.0.2"
+    "@jsonjoy.com/json-pack": "^1.4.0",
+    "@jsonjoy.com/json-type": "^1.3.0",
+    "@jsonjoy.com/reactive-rpc": "^2.5.0",
+    "@jsonjoy.com/util": "^1.8.0",
+    "json-joy": "^17.49.1",
+    "pojo-dump": "^1.1.0",
+    "rxjs": "^7.8.2",
+    "tree-dump": "^1.0.3"
   },
   "devDependencies": {
     "@biomejs/biome": "^1.9.3",

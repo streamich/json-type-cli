@@ -19,12 +19,12 @@ export class CliParamHelp implements CliParam {
         const methodLines = methods.map((m) => {
           const route = cli.router.get(m).type;
           const schema = route.getSchema();
-          let line = `- "${m}"`;
+          let line = `* "${m}"`;
           if (schema.title) line += ` - ${schema.title}`;
           return line;
         });
         const cmd = cli.cmd();
-        const codecLines = [...cli.codecs.codecs.values()].map((codec) => `- "${codec.id}" - ${codec.description}`);
+        const codecLines = [...cli.codecs.codecs.values()].map((codec) => `* "${codec.id}" - ${codec.description}`);
         const text = `
 JSON Type CLI uses request/response paradigm to execute CLI commands. Each
 command is identified by the <method> name. Each command receives a JSON

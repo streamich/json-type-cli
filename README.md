@@ -310,6 +310,10 @@ my-cli data.complex --out=/results/summary --format=json:text
 
 ## Command Line Parameters
 
+All parameter paths use **JSON Pointer** syntax as defined in [RFC 6901](https://tools.ietf.org/html/rfc6901). JSON Pointers provide a standardized way to reference specific values within JSON documents using slash-separated paths.
+
+When a path doesn't exist in the target object, the CLI automatically creates the necessary nested structure. For example, `--str/database/host=localhost` will create the object `{"database": {"host": "localhost"}}` even if neither `database` nor `host` existed previously.
+
 ### Data Type Parameters
 
 #### String Values (`--str` or `--s`)

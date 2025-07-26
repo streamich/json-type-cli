@@ -41,6 +41,8 @@ Usage:
     ${cmd} <method> '<json>'
     ${cmd} <method> --<type><pointer>=<value>
     echo '<json>' | ${cmd} <method>
+    ${cmd} .methods
+    ${cmd} .method --s/name=<method>
 
 Examples:
 

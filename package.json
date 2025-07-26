@@ -1,5 +1,5 @@
 {
-  "name": "@jsonjoy.com/json-type-cli",
+  "name": "json-type-cli",
   "packageManager": "yarn@4.9.2",
   "publishConfig": {
     "access": "public"
@@ -10,8 +10,8 @@
     "name": "streamich",
     "url": "https://github.com/streamich"
   },
-  "homepage": "https://github.com/jsonjoy-com/json-type-cli",
-  "repository": "jsonjoy-com/json-type-cli",
+  "homepage": "https://github.com/streamich/json-type-cli",
+  "repository": "streamich/json-type-cli",
   "funding": {
     "type": "github",
     "url": "https://github.com/sponsors/streamich"

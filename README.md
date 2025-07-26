@@ -18,13 +18,13 @@ The library implements the **JSON Rx RPC protocol**, where each CLI interaction 
 ### Installation
 
 ```bash
-npm install @jsonjoy.com/json-type-cli
+npm install json-type-cli
 ```
 
 ### Basic Usage
 
 ```typescript
-import { createCli } from '@jsonjoy.com/json-type-cli';
+import { createCli } from 'json-type-cli';
 import { ObjectValue } from '@jsonjoy.com/json-type/lib/value/ObjectValue';
 
 // Create a router with your methods
@@ -87,7 +87,7 @@ This follows the JSON Rx RPC **Request Complete** message pattern where the clie
 Methods are defined using the JSON Type system and added to a router:
 
 ```typescript
-import { createCli } from '@jsonjoy.com/json-type-cli';
+import { createCli } from 'json-type-cli';
 import { ObjectValue } from '@jsonjoy.com/json-type/lib/value/ObjectValue';
 
 const router = ObjectValue.create();

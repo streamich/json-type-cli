@@ -237,8 +237,11 @@ my-cli user.update --bool/active=true --bool/verified=false
 # JSON values
 my-cli config.set --json/settings='{"theme": "dark", "lang": "en"}'
 
-# Nested paths using JSON Pointer
-my-cli user.update --str/profile/name="Alice" --num/profile/age=25
+# Nested paths using JSON Pointer (requires parent structure to exist)
+my-cli user.update '{"profile": {}}' --str/profile/name="Alice" --num/profile/age=25
+
+# To create nested structures, provide the base structure first
+my-cli config.set '{"database": {}}' --str/database/host=localhost --num/database/port=5432
 ```
 
 ### Combining Input Sources
@@ -246,7 +249,7 @@ my-cli user.update --str/profile/name="Alice" --num/profile/age=25
 All sources can be combined. Command line options override STDIN data, which overrides the JSON parameter:
 
 ```bash
-echo '{"name": "Default", "age": 0}' | my-cli greet '{"name": "Alice"}' --num/age=30
+echo '{"name": "Default", "age": 0}' | my-cli greet --str/name=Alice --num/age=30
 # Result: {"name": "Alice", "age": 30}
 ```
 

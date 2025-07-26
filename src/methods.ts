@@ -52,9 +52,7 @@ export const defineBuiltinRoutes = <Routes extends ObjectType<any>>(r: ObjectVal
 
     r(
       '.method',
-      t.Function(t.Object(
-        t.prop('name', t.str)
-      ), t.any).options({
+      t.Function(t.Object(t.prop('name', t.str)), t.any).options({
         title: 'Show method information',
         description: 'Returns JSON Type schema of the method.',
       }),

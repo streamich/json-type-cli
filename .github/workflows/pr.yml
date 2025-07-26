@@ -39,4 +39,3 @@ jobs:
       - run: yarn build
       - run: yarn lint
       - run: yarn format
-      - run: yarn typedoc

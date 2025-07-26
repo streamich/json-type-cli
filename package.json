@@ -49,12 +49,7 @@
     "lint:fix": "biome lint --apply ./src",
     "clean": "npx rimraf@6.0.1 lib typedocs coverage gh-pages yarn-error.log",
     "build": "tsc --project tsconfig.build.json --module commonjs --target es2020 --outDir lib",
-    "test": "echo \"No tests yet\"",
-    "coverage": "yarn test --collectCoverage",
-    "typedoc": "npx typedoc@0.25.13 --tsconfig tsconfig.build.json",
-    "build:pages": "npx rimraf@6.0.1 gh-pages && mkdir -p gh-pages && cp -r typedocs/* gh-pages && cp -r coverage gh-pages/coverage",
-    "deploy:pages": "gh-pages -d gh-pages",
-    "publish-coverage-and-typedocs": "yarn typedoc && yarn coverage && yarn build:pages && yarn deploy:pages"
+    "test": "echo \"No tests yet\""
   },
   "peerDependencies": {
     "tslib": "2"

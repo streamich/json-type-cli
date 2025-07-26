@@ -54,9 +54,7 @@ export const defineCrdtRoutes = <Routes extends ObjectType<any>>(r: ObjectValue<
     async ({value, sid, serverClock, codec}) => {
       const model = serverClock
         ? Model.withServerClock()
-        : sid !== undefined
-          ? Model.withLogicalClock(sid)
-          : Model.withLogicalClock();
+        : Model.withServerClock();
       if (value !== undefined) model.api.root(value);
       const patch = model.api.flush();
       const patchEncoded = patch && patch.ops.length ? encodePatch(patch) : null;

@@ -9,6 +9,7 @@ import {CliCodecRaw} from './codecs/raw';
 import {CliCodecText} from './codecs/text';
 import {CliCodecTree} from './codecs/tree';
 import {CliCodecUbjson} from './codecs/ubjson';
+import {CliCodecHex} from './codecs/hex';
 
 export const defaultCodecs = new CliCodecs();
 
@@ -22,3 +23,4 @@ defaultCodecs.register(new CliCodecUbjson(writer));
 defaultCodecs.register(new CliCodecText());
 defaultCodecs.register(new CliCodecTree());
 defaultCodecs.register(new CliCodecRaw());
+defaultCodecs.register(new CliCodecHex());

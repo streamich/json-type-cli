@@ -1,6 +1,8 @@
 import type {Cli} from '../Cli';
 import type {CliParam, CliParamInstance} from '../types';
 
+const bold = (text: string) => `\u001b[1m${text}\u001b[0m`;
+
 export class CliParamHelp implements CliParam {
   public readonly param = 'help';
   public readonly short = 'h';
@@ -9,8 +11,8 @@ export class CliParamHelp implements CliParam {
     new (class implements CliParamInstance {
       public readonly onParam = async () => {
         const paramLines = cli.params.map((param) => {
-          let line = `--${param.param}`;
-          if (param.short) line += ` or --${param.short}`;
+          let line = bold(`--${param.param}`);
+          if (param.short) line += ` or ${bold(`--${param.short}`)}`;
           line += ` - ${param.title}`;
           if (param.example) line += `, eg. ${param.example}`;
           return line;
@@ -19,12 +21,12 @@ export class CliParamHelp implements CliParam {
         const methodLines = methods.map((m) => {
           const route = cli.router.get(m).type;
           const schema = route.getSchema();
-          let line = `- "${m}"`;
+          let line = '* ' + bold(m);
           if (schema.title) line += ` - ${schema.title}`;
           return line;
         });
-        const cmd = cli.cmd();
-        const codecLines = [...cli.codecs.codecs.values()].map((codec) => `- "${codec.id}" - ${codec.description}`);
+        const cmd = bold(cli.cmd());
+        const codecLines = [...cli.codecs.codecs.values()].map((codec) => `* ${bold(codec.id)} - ${codec.description}`);
         const text = `
 JSON Type CLI uses request/response paradigm to execute CLI commands. Each
 command is identified by the <method> name. Each command receives a JSON
@@ -39,8 +41,17 @@ the "--stdout" or "--out" option.
 Usage:
 
     ${cmd} <method> '<json>'
-    echo '<json>' | ${cmd} <method>
     ${cmd} <method> --<type><pointer>=<value>
+    echo '<json>' | ${cmd} <method>
+
+Method help:
+
+    ${cmd} .methods
+    ${cmd} .method --s/name=<method>
+    ${cmd} .type --out=/<method>
+    ${cmd} .type --out=/<method>/description
+    ${cmd} .type --out=/<method>/req
+    ${cmd} .type --out=/<method>/res --format=tree
 
 Examples:
 
@@ -59,13 +70,6 @@ Options:
 Formats:
 
     ${codecLines.join('\n    ')}
-
-Method help:
-
-    ${cmd} .type --out=/<method>
-    ${cmd} .type --out=/<method>/description
-    ${cmd} .type --out=/<method>/req
-    ${cmd} .type --out=/<method>/res --format=tree
 
 Methods:
 

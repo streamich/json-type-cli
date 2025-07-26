@@ -6,7 +6,7 @@ export class CliCodecRaw implements CliCodec<'raw'> {
 
   encode(value: unknown): Uint8Array {
     if (value instanceof Uint8Array) return value;
-    const str = String(value);
+    const str = String(value) + '\n';
     return new TextEncoder().encode(str);
   }
 

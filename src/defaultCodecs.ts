@@ -10,6 +10,12 @@ import {CliCodecText} from './codecs/text';
 import {CliCodecTree} from './codecs/tree';
 import {CliCodecUbjson} from './codecs/ubjson';
 import {CliCodecHex} from './codecs/hex';
+import {CliCodecDagJson} from './codecs/dag-json';
+import {CliCodecDagCbor} from './codecs/dag-cbor';
+import {CliCodecBencode} from './codecs/bencode';
+import {CliCodecResp} from './codecs/resp';
+import {CliCodecBson} from './codecs/bson';
+import {CliCodecEjson} from './codecs/ejson';
 
 export const defaultCodecs = new CliCodecs();
 
@@ -24,3 +30,9 @@ defaultCodecs.register(new CliCodecText());
 defaultCodecs.register(new CliCodecTree());
 defaultCodecs.register(new CliCodecRaw());
 defaultCodecs.register(new CliCodecHex());
+defaultCodecs.register(new CliCodecDagJson(writer));
+defaultCodecs.register(new CliCodecDagCbor(writer));
+defaultCodecs.register(new CliCodecBencode(writer));
+defaultCodecs.register(new CliCodecResp(writer));
+defaultCodecs.register(new CliCodecBson(writer));
+defaultCodecs.register(new CliCodecEjson(writer));

@@ -65,7 +65,7 @@
     "tree-dump": "^1.0.3"
   },
   "devDependencies": {
-    "@biomejs/biome": "^1.9.3",
+    "@biomejs/biome": "^2.0.0",
     "@types/benchmark": "^2.1.5",
     "@types/jest": "^29.5.12",
     "@types/node": "^22.7.4",
